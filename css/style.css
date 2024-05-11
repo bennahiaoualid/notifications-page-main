@@ -107,6 +107,9 @@ a{
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
+.container li.read {
+    background-color: var(--clr-White);
+}
 .container li .tooltip{
     display: flex;
     gap: 1rem;
@@ -136,6 +139,9 @@ a{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.container li.read .content .round{
+    display:none;
 }
 .container li a:not(.profile-name) {
     color: var(--clr-Dark-grayish-blue);
