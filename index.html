@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Notifications <span>3</span></h1>
+      <a href="#">Mark all as read</a>
+    </header>
+    <ul>
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-mark-webber.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Mark Webber</a>
+              reacted to your recent post
+              <a href="#"> My first tournament today!</a>
+              <span class="round"></span>
+            </p>
+            <p class="time"> 1m ago</p>
+          </div>
+        </div> 
+      </li> 
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-angela-gray.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Angela Gray</a>
+              followed you
+              <span class="round"></span>
+            </p>
+            <p class="time"> 5m ago</p>
+          </div>
+        </div> 
+      </li> 
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-jacob-thompson.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Jacob Thompson</a>
+              has joined your group 
+              <a href="#"> Chess Club</a>
+              <span class="round"></span>
+            </p>
+            <p class="time"> 1 day ago</p>
+          </div>
+        </div> 
+      </li> 
+
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-rizky-hasanuddin.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Rizky Hasanuddin</a>
+                Rizky Hasanuddin sent you a private message
+            </p>
+            <p class="time"> 5 days ago</p>
+          </div>
+        </div>
+        <div class="detail">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.
+        </div> 
+      </li> 
+
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-kimberly-smith.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Kimberly Smith</a>
+              commented on your picture
+            </p>
+            <p class="time"> 1 week ago</p>
+          </div>
+          <img class="pic" src="./images/image-chess.webp" alt="">
+        </div> 
+      </li> 
+
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-nathan-peterson.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Nathan Peterson</a>
+              reacted to your recent post
+              <a href="#"> 5 end-game strategies to increase your win rate</a>
+            </p>
+            <p class="time"> 2 weeks ago</p>
+          </div>
+        </div> 
+      </li> 
+      <li> 
+        <div class="tooltip">
+          <img src="./images/avatar-jacob-thompson.webp" alt="">
+          <div class="content">
+            <p class="info">
+              <a class="profile-name" href="#">Anna Kim</a>
+              left the group
+              <a href="#"> Chess Club</a>
+            </p>
+            <p class="time"> 2 weeks ago</p>
+          </div>
+        </div> 
+      </li> 
+    </ul>
+    
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* Start Variables */
+:root {
+    --clr-Red: hsl(1, 90%, 64%);
+    --clr-Blue: hsl(219, 85%, 26%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --clr-Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --clr-Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --clr-Grayish-blue: hsl(219, 14%, 63%);
+    --clr-Dark-grayish-blue: hsl(219, 12%, 42%);
+    --clr-Very-dark-blue: hsl(224, 21%, 14%);
+
+    --fs-normal: clamp(1rem, 2.5vw, 1.125rem);
+    --fs-heading: clamp(2rem, 3.5vw, 2rem);
+    --fs-sub-heading: clamp(1.375rem, 3vw, 1.5rem);
+
+    --fw-normal: 500;
+    --fw-bold: 800;
+
+    --main-padding: 1.5rem;
+    --main-margin:1.5rem;
+    --border-radius:0.5rem ;
+
+    --main-transtion: 0.3s
+}
+
+
+/* End Variables */
+
+
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 16px;
+}
+body {
+   font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-normal);
+    background-color: var(--clr-Very-light-grayish-blue);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: var(--main-transtion);
+    -webkit-transition: var(--main-transtion);
+    -moz-transition: var(--main-transtion);
+    -ms-transition: var(--main-transtion);
+    -o-transition: var(--main-transtion);
+}
+/* end Global Rules */
+.container{
+    padding: var(--main-padding);
+    background-color: var(--clr-White);
+
+}
+@media only screen and (min-width:768px){
+    .container{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+.container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--clr-Very-dark-blue);
+}
+.container header h1{
+    font-size: var(--fs-heading);
+}
+.container header h1 span{
+    display: inline-block;
+    background-color: var(--clr-Blue);
+    color: var(--clr-White);
+    font-size: var(--fs-sub-heading);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.container header a{
+    color: var(--clr-Dark-grayish-blue);
+}
+
+.container li {
+    background-color: var(--clr-Very-light-grayish-blue);
+    padding: var(--main-padding);
+    margin-block-end: var(--main-margin);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.container li .tooltip{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.container li img {
+    max-width: 70px;
+}
+.container li img.pic {
+    margin-inline-start: auto;
+}
+.container li .content {
+    line-height: 2rem;
+    color:var(--clr-Dark-grayish-blue);
+}
+.container li a.profile-name {
+    color: var(--clr-Very-dark-blue);
+    font-weight: var(--fw-bold);
+}
+.container li .content .round{
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: var(--clr-Red);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container li a:not(.profile-name) {
+    color: var(--clr-Dark-grayish-blue);
+    font-weight: var(--fw-bold);
+}
+
+.container li  .content p:last-child {
+    color: var(--clr-Grayish-blue);
+    
+}
+.container li a:hover,
+.container header a:hover{
+    color: var(--clr-Blue);
+    font-weight: var(--fw-bold);
+}
+.container li .detail{
+    display: none;
+    background-color: var(--clr-Light-grayish-blue-2);
+    color:var(--clr-Dark-grayish-blue);
+    padding: var(--main-padding);
+    margin-block: var(--main-margin);
+    margin-inline-start: calc(var(--main-margin) * 2);
+    line-height: 2rem;
+}
+.container li.extended .detail{
+    display: block;
+}
